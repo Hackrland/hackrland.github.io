@@ -1,0 +1,96 @@
+@font-face {
+    font-family: JetBrainsFont;
+    src: url(font.ttf);
+}
+
+* {
+    font-family: JetBrainsFont;
+}
+
+body {
+    background-color: #11111b;
+    color: #cba6f7;
+}
+
+a {
+    color: #89b4fa;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+#movable-block {
+    border: none;
+    padding: 3px;
+    border-radius: 0px;
+    border-radius: 13px;
+    text-align: center;
+    background-color: #181825;
+    color: #cdd6f4;
+    cursor: grabbing;
+    height: 4.5%;
+    overflow: hidden;
+    z-index: 9999;
+    width: 110%;
+    margin-left: 0%;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3); /* Adjust the shadow properties as needed */
+    transform: translateX(-5%) translateY(3px);
+    user-select: none;
+  }
+
+  .easter-egg {
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1.5%;
+    padding-right: 10%;
+  }
+
+  .container {
+    display: flex;
+    gap: 10%;
+    padding-left: 7%;
+    padding-right: 7%;
+    overflow: hidden;
+    margin-bottom: 10.5%; 
+}
+
+.container iframe {
+    flex: 1;
+    width: 30%;
+    height: 20cm
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display:grid;
+    gap: 3%;
+    padding-left: 9%;
+    padding-right: 0%;
+    overflow: hidden;
+  }
+  
+  .container iframe {
+    flex: 1;
+    width: 90%;
+    height: 10cm
+  }
+}
+
+.collapsible-content.active {
+  display: block;
+}
